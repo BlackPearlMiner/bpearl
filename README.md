@@ -14,10 +14,8 @@ One Radeon RX 9070 XT reached a miner-reported peak of **165.57 TH/s** at a 340 
 
 In a five-minute retest, the card averaged 165.35 TH/s and 339.52 W of board power over 270.66 seconds of steady operation. The pool accepted 7 shares, with 0 rejected, 0 stale and 0 local verification errors.
 
-| RX 9070 XT measurement | Power limit per GPU | Hashrate |
-| --- | ---: | ---: |
-| Sum of four peaks measured separately (165.57 + 164.09 + 162.48 + 164.58 TH/s) | 340 W | 656.72 TH/s |
-| Four GPUs running together, 950 W combined board power | 238 W | 561.82 TH/s |
+- **656.72 TH/s, sum of four peaks measured separately.** At a 340 W limit per card, the peaks were 165.57, 164.09, 162.48 and 164.58 TH/s.
+- **561.82 TH/s, four GPUs running together.** Each card had a 238 W limit. Combined GPU board power was 950 W.
 
 An earlier single-card run at a 238 W limit peaked at 143.54 TH/s and averaged 143.44 TH/s over 58.2 seconds. [B85 benchmarks and power profiles](https://bpearl.dev/?lang=en#performance)
 
