@@ -6,19 +6,20 @@
 
 BlackPearl 是用于 AMD Radeon 显卡的 Pearl（PRL）挖矿软件。支持命令行启动，也可通过浏览器控制台配置多卡主机，按 PCIe 地址查看每张显卡的运行状态。
 
-**Radeon RX 9070 XT 单卡实测峰值为 143.54 TH/s**，功率上限为 238 W。另一组四卡测试采用相同的单卡功率上限，四张卡同时运行时的**合计算力为 561.82 TH/s**。
+一张 Radeon RX 9070 XT 在 340 W 功率上限下，矿工端记录的峰值为 **165.57 TH/s**。
 
 **[下载 BlackPearl 1.0.10 Linux x86_64 安装包（75.2 MB）](https://github.com/BlackPearlMiner/bpearl/releases/download/v1.0.10/bpearl-1.0.10-linux-x86_64.tar.gz)** · [SHA-256 校验文件](https://github.com/BlackPearlMiner/bpearl/releases/download/v1.0.10/SHA256SUMS) · [版本说明](https://github.com/BlackPearlMiner/bpearl/releases/tag/v1.0.10)
 
 ## 实测性能
 
-| RX 9070 XT 配置 | 每卡功率上限 | 实测算力 |
-| --- | ---: | ---: |
-| 单卡峰值读数 | 238 W | 143.54 TH/s |
-| 单卡 58.2 秒平均值 | 238 W | 143.44 TH/s |
-| 四卡同一时刻的读数之和 | 238 W | 561.82 TH/s |
+五分钟复测中，单卡在 270.66 秒稳态期间的平均算力为 165.35 TH/s，平均板卡功耗为 339.52 W。矿池接受 7 份，拒绝 0 份，过期 0 份，本地校验错误 0 次。
 
-以上数据来自 2026 年 11 月的 B85 硬件测试。四卡运行时，显卡传感器记录的板卡功耗合计为 950 W。[官网性能测试](https://bpearl.dev/?lang=zh#performance)列出了逐卡读数，以及六个功率档位下的单卡算力和能效。
+| RX 9070 XT 测量方式 | 每卡功率上限 | 算力 |
+| --- | ---: | ---: |
+| 四张卡分别测得的峰值之和（165.57 + 164.09 + 162.48 + 164.58 TH/s） | 340 W | 656.72 TH/s |
+| 四卡同时运行，GPU 板卡功耗合计 950 W | 238 W | 561.82 TH/s |
+
+在较早的 238 W 单卡测试中，峰值为 143.54 TH/s，58.2 秒平均算力为 143.44 TH/s。[B85 实测数据与功率曲线](https://bpearl.dev/?lang=zh#performance)
 
 ## 安装与配置
 
